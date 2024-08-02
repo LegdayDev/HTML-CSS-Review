@@ -1,0 +1,82 @@
+.profile {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title {
+    font-size: 16px;
+    color: brown;
+    letter-spacing: 6px;
+    text-align: center
+}
+
+.desc {
+    text-align: center
+}
+
+.desc .position {
+    color: red;
+    font-weight: 700
+}
+
+.content {
+    width: 200px;
+    height: 100px;
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: block;
+    /* display:block 은 가로행을 전부 차지*/
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    color: wheat;
+    box-shadow: 5px 5px black;
+}
+
+
+/* 
+선택자(selector) 우선순위
+    1. Inline
+    2. ID
+    3. CLASS
+    4. TAG
+*/
+
+.container {
+    width: 800px;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background-color: aquamarine;
+}
+
+.left-menu {
+    width: 20%;
+    height: 400px;
+    background-color: cornflowerblue;
+    display: inline-block;
+    vertical-align: top;
+    /* 태그 크기만큼 차지 */
+}
+
+.right {
+    width: 80%;
+    height: 400px;
+    background-color: coral;
+    float: right;
+}
+
+.footer {
+    width: 100%;
+    height: 100px;
+    background-color: gray;
+    clear: both;
+    /* float 다음에 오는 태그에 float 적용안함 */
+}

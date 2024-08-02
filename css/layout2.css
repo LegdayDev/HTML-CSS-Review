@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+body {
+  margin: 0px;
+}
+
+div {
+  box-sizing: border-box;
+  /* max-width 를 지정할 때 margin 과 padding 을 포함하게 된다. */
+}
+
+.main-background {
+  width: 100%;
+  height: 500px;
+  background-image: url("/img/shoes.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: brightness(80%);
+  padding: 1px;
+  /* 명도 */
+  position: relative;
+  /* 자식 요소 중 position: absolute 를 사용하는 요소의 기준이 된다. */
+}
+
+.main-title {
+  color: white;
+  font-size: 60px;
+  margin-top: 30px;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.main-info {
+  color: #eee;
+  font-size: 20px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.main-button {
+  margin-left: 10px;
+  padding: 15px;
+  font-size: 20px;
+  background-color: #eee;
+  border: none;
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 130px;
+}
+
+.etc {
+  width: 80%;
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #eee;
+  position: relative;
+  top: -50px;
+}
+
+input[type=text] {
+  /* input 태그에서 type 이 text 태그만 지정*/
+  padding: 10px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 5px;
+}

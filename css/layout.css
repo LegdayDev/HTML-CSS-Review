@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* 
+  공백 : 모든 자식 태그들에 적용
+  > : 모든 직계자식(자식의 자식은 포함X) 
+*/
+
+.navbar {
+  padding-left: 0;
+}
+
+.navbar li {
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar a {
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  width: 800px;
+}
+
+.blog-profile {
+  width: 50px;
+  display: block;
+  float: left;
+}
+
+.blog-name {
+  float: left;
+}
+
+.blog-content {
+  width: 80%;
+  height: 200px;
+  background-color: #eee;
+  float: left;
+}
+
+
+.blog-img {
+  width: 20%;
+  height: 200px;
+  background-color: yellow;
+  float: left;
+}
