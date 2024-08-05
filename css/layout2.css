@@ -1,7 +1,14 @@
 @charset "UTF-8";
 
+@font-face {
+  font-family: '근본글꼴';
+  src: url("/lib/D2Coding.ttf");
+}
+
+
 body {
   margin: 0px;
+  font-family: '근본글꼴';
 }
 
 div {
@@ -69,4 +76,16 @@ input[type=text] {
   font-size: 20px;
   border: 2px solid black;
   border-radius: 5px;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  margin: 5px;
 }
