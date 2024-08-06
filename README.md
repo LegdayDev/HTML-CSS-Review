@@ -14,3 +14,10 @@
 > 1. HTML CSS 웹폰트
 > 2. 레이아웃 : FlexBox
 > 3. head 태그
+
+### [DAY 03]('/md/day03.md')
+> 1. 반응형 레이아웃
+> 2. Transition 속성으로 애니메이션
+> 3. CSS 덮어쓰기
+> 4. Pseudo-element
+> 5. Shadow DOM

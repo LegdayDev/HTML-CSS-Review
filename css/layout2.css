@@ -78,14 +78,172 @@ input[type=text] {
   border-radius: 5px;
 }
 
-.flex-container {
+.nav-container {
   display: flex;
+  height: 50px;
   align-items: center;
-  justify-content: center;
 }
 
-.box {
-  width: 100px;
-  height: 100px;
-  margin: 5px;
+.nav-item {
+  padding: 5px;
+  font-size: 18px;
+}
+
+.shop-bg {
+  background-color: #eee;
+  padding: 20px;
+}
+
+.shop-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.shop-item {
+  width: 33%;
+  padding: 15px;
+}
+
+.shop-item img {
+  width: 100%;
+  display: block;
+}
+
+.overlay-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.overlay-black {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 100%;
+  transition: all 1s;
+}
+
+.overlay-black div {
+  color: white
+}
+
+.overlay-black div:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 0;
+  margin-left: 16px;
+  padding-top: 20px;
+}
+
+.overlay-black div:nth-child(2) {
+  font-size: 16px;
+  margin-left: 16px;
+  margin-bottom: 800px;
+}
+
+.overlay-wrap:hover .overlay-black {
+  margin-top: 50%;
+}
+
+.custom {
+  color: green;
+}
+
+
+.pseudo::first-letter {
+  color: red;
+  font-size: 30px
+}
+
+.pseudo::first-line {
+  color: blue;
+  font-size: 30px
+}
+
+.pseudo::after {
+  content: '안녕'
+}
+
+.pseudo::before {
+  content: '반갑'
+}
+
+/* .input-file::file-selector-button {
+  background-color: skyblue;
+  font-size: 20px;
+  color: white;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.input-file::file-selector-button:hover {
+  background-color: blue;
+} */
+
+input[type=file]::-webkit-file-upload-button {
+  background: skyblue;
+  border: none;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+input::-webkit-input-placeholder {
+  color: red;
+}
+
+input[type=range] {
+  appearance: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+  appearance: none;
+  background: red;
+  width: 50px;
+  height: 50px;
+}
+
+progress {
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  appearance: none;
+  background-color: red;
+  ;
+}
+
+progress::-webkit-progress-value {
+  appearance: none;
+  initial-value: 100;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  .main-title {
+    font-size: 30px
+  }
+
+  .nav-item {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .main-title {
+    font-size: 20px
+  }
+
+  .nav-item {
+    font-size: 10px;
+  }
 }

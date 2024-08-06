@@ -6,69 +6,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>레이아웃 예제 2</title>
   <link href="/css/layout2.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 </head>
 
 <body>
-  <div class="flex-container">
-    <div class="box">ShooShop</div>
-    <div class="box" style="flex-grow : 1"></div>
-    <div class="box">Products</div>
-    <div class="box">Services</div>
+  <div class="nav-container">
+    <div class="nav-item">ShooShop</div>
+    <div class="nav-item" style="flex-grow : 1"></div>
+    <div class="nav-item">Products</div>
+    <div class="nav-item">Services</div>
   </div>
 
+  <div class="shop-bg">
+    <div class="shop-container">
+      <div class="shop-item">
+        <div style="position: relative">
+          <div class="overlay-wrap">
+            <div class="overlay-black">
+              <div>$60</div>
+              <div>인기상품</div>
+            </div>
+          </div>
+          <img src="img/shoes1.jpg">
+        </div>
+      </div>
+      <div class="shop-item">
+        <img src="img/shoes2.jpg">
+      </div>
+      <div class="shop-item">
+        <img src="img/shoes3.jpg">
+      </div>
+    </div>
 
 
+    <div class="main-background">
+      <h4 class="main-title">Buy Our Shoes! Now On Sale</h4>
+      <p class="main-info custom">
+        모든 국민은 법률이 정하는 바에 의하여 국방의 의무를 진다. 국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다.
+      </p>
+      <button class="main-button">구매하기</button>
 
-
-
-
-
-
-
-  <div class="main-background">
-    <h4 class="main-title">Buy Our Shoes!</h4>
-    <p class="main-info">
-      모든 국민은 법률이 정하는 바에 의하여 국방의 의무를 진다. 국회의원은 현행범인인 경우를 제외하고는 회기중 국회의 동의없이 체포 또는 구금되지 아니한다.
-    </p>
-    <button class="main-button">구매하기</button>
-
-  </div>
-  <div class="etc">
-    <h4>
-      How we design our shoes
-    </h4>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-      a
-      type specimen book
-    </p>
-  </div>
-  <br>
-  <div class="etc" style="padding: 50px;">
-    <h4>
-      How we design our shoes
-    </h4>
-    <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-      standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
-      a
-      type specimen book
-    </p>
-  </div>
-  <form action="#" method="get">
-    <input type="text" value="값을 입력해봐" class="text-input">
-    <input type="password" placeholder="예시야">
-    <input type="email" name="서버로 넘어갈 키값">
-    <input type="radio">
-    <select>
-      <option>첫번째</option>
-      <option>두번째</option>
-      <option>세번쨰</option>
-    </select>
-    <textarea rows="10">값을 입력해봐</textarea>
-    <input type="submit" value="전송" />
-  </form>
+    </div>
+    <div class="etc">
+      <h4>
+        How we design our shoes
+      </h4>
+      <p>
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a
+        type specimen book
+      </p>
+    </div>
+    <br>
+    <div class="etc" style="padding: 50px;">
+      <h4>
+        How we design our shoes
+      </h4>
+      <p class="pseudo">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+        standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make
+        a
+        type specimen book
+      </p>
+    </div>
+    <input type="text" placeholder="안녕하세용">
+    <br>
+    <input type="range">
+    <br>
+    <progress value="0.5"></progress>
+    <br>
+    <form action="#" method="get">
+      <input type="text" value="값을 입력해봐" class="text-input">
+      <input type="password" placeholder="예시야">
+      <input type="email" name="서버로 넘어갈 키값">
+      <input type="radio">
+      <select>
+        <option>첫번째</option>
+        <option>두번째</option>
+        <option>세번쨰</option>
+      </select>
+      <textarea rows="10">값을 입력해봐</textarea>
+      <input type="submit" value="전송" />
+    </form>
 </body>
 
 </html>
