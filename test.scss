@@ -1,0 +1,21 @@
+@use 'reset';
+
+@mixin 폰트스타일($폰트사이즈, $속성, $속성값) {
+  font-size: $폰트사이즈;
+  #{$속성}: $속성값;
+}
+
+
+
+h2 {
+  @include 폰트스타일(40px, width, 100px);
+  color: reset.$메인칼라;
+}
+
+h3 {
+  @include 폰트스타일(30px, height, 200px);
+}
+
+h4 {
+  @include 폰트스타일(20px, background, blue);
+}

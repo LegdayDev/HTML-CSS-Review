@@ -21,3 +21,9 @@
 > 3. CSS 덮어쓰기
 > 4. Pseudo-element
 > 5. Shadow DOM
+
+### [DAY 04]('/md/day04.md')
+> 1. Sass
+> 2. video, audio 
+> 3. CSS Grid 레이아웃
+> 4. position: sticky 활용
